@@ -10,6 +10,9 @@ p{
 
 /*{border:solid}
 */
+.menu a{
+    margin-left:20;
+}
 .header{
     background-color:white;
     display:flex;
@@ -19,6 +22,8 @@ p{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left:60px;
+    align-items: center;
 }
 .footer{
     display:flex;
@@ -27,4 +32,37 @@ p{
 }
 body{
     background-color:lightblue;
+}
+.menu{
+    margin-right:30px;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:gold;
+}
+
+.item{
+    position:relative;
+    margin-left:40%;
+    align-items:center;
+}
+.item p{
+    position: absolute;
+    top:30%;
+    left:10%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+}
+.item img{
+    margin-left:90px;
+
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+    opacity:0.33;
+
 }
